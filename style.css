@@ -1,7 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    font-family: "General Sans";
+   font-family: "General Sans";
     color: #ffff;
     box-sizing: border-box;
 }
@@ -12,7 +12,76 @@ html,body{
 .main{
     width: 100%;
 }
-.hero{
+#loader{
+    width: 100%;
+    height: 100vh;
+    background-color: #111;
+}
+#loader h1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+   /*background-color: red;*/
+   
+  
+
+
+}
+#loader h1 span{
+    font-weight: 200;
+    font-size: 5vw;
+    font-family:"General Sans"; 
+}
+span #r{
+    color: #14CF93;
+}
+.loaderinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    left: 47%;
+    transform: translate(-50%, 0);
+}
+.loaderinner h5{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 300;
+}
+.rev .parent{
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: hidden;
+}
+.rev .parent .child{
+    display: block;
+}
+.parent .child span{
+    display: inline-block;
+}
+
+#green{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 0vh;
+    background-color: #14CF93;
+}
+
+
+
+
+
+
+/*.hero{
     width: 100%;
     height: 100vh;
     background-color:#000000;
@@ -32,7 +101,7 @@ html,body{
 }
 
 .heading{
-    margin-top: 50px;
+    margin-top: -40px;
 }
 .heading h1{
     color:#14CF93 ;
@@ -46,6 +115,7 @@ html,body{
     letter-spacing:0.3vw ;
 }
 .heading #sh1{
+    margin-top:-70px ;
     margin-left: 210px;
 }
 .heading #th1{
@@ -53,11 +123,11 @@ html,body{
     font-family: "General Sans Medium";
     font-size: 1.8vw;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: -50px;
     font-weight: 200;
 }
 .heading2{
-    margin-top: 57px;
+    margin-top: 80px;
     margin-left: 700px;
     text-transform: uppercase;
     line-height: 2;
@@ -71,9 +141,4 @@ html,body{
     background-color:#14CF93 ;
 
     color: black;
-}
-.hero2{
-    background-color: #000000;
-    width: 100%;
-    height: 100vh;
 }
