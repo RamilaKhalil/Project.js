@@ -2,7 +2,7 @@
     margin: 0%;
     padding: 0%;
    font-family: "General Sans";
-    color: #ffff;
+    color: #dcd8d8;
     box-sizing: border-box;
 }
 html,body{
@@ -12,10 +12,14 @@ html,body{
 .main{
     width: 100%;
 }
+
 #loader{
+    z-index: 9999;
+    position: absolute;
     width: 100%;
     height: 100vh;
-    background-color: #111;
+    background-color: #171717;
+    color: #ffff;
 }
 #loader h1{
     display: flex;
@@ -26,19 +30,16 @@ html,body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5vw;
-   /*background-color: red;*/
-   
-  
-
-
 }
 #loader h1 span{
-    font-weight: 200;
+    font-weight: 600;
     font-size: 5vw;
     font-family:"General Sans"; 
 }
 span #r{
-    color: #14CF93;
+    color: #52E0ED;
+    
+    
 }
 .loaderinner{
     display: flex;
@@ -56,9 +57,9 @@ span #r{
 }
 .rev .parent{
     display: block;
+    justify-content: center;
     width: 100%;
     display: flex;
-    justify-content: center;
     overflow-y: hidden;
 }
 .rev .parent .child{
@@ -73,7 +74,8 @@ span #r{
     top: 100%;
     width: 100%;
     height: 0vh;
-    background-color: #14CF93;
+    background-color:#52E0ED ;
+    z-index: 999;
 }
 
 
@@ -81,10 +83,10 @@ span #r{
 
 
 
-/*.hero{
+.hero{
     width: 100%;
     height: 100vh;
-    background-color:#000000;
+    background-color:#171717;
 }
 .nav{
     width: 100%;
@@ -94,51 +96,79 @@ span #r{
     justify-content: space-between;
      padding: 1vw 5vw;
 }
-.nav a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
+.nav a {
+    
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.9rem;
+
 }
 
+
+  
 .heading{
     margin-top: -40px;
 }
 .heading h1{
-    color:#14CF93 ;
+    color:#c8c8c8 ;
     opacity: .8;
-    margin-left: 70px;
+    margin-left: -480px;
     font-size: 9vw;
     line-height: 1;
-    font-family: "General Sans Medium";
+    font-family: "General Sans";
     text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing:0.3vw ;
+    font-weight: 500;
+    letter-spacing:0.2vw ;
 }
 .heading #sh1{
-    margin-top:-70px ;
-    margin-left: 210px;
+    margin-top:-40px ;
+    margin-left: 130px;
+    font-weight: 500;
 }
-.heading #th1{
-    margin-left: 540px;
-    font-family: "General Sans Medium";
-    font-size: 1.8vw;
-    text-transform: uppercase;
-    margin-top: -50px;
-    font-weight: 200;
+
+
+.c-visual{
+    height:230px ;
+    width: 230px;
+    margin-left: 70px;
+    margin-top: -155px;
+    
+    
+    
+
 }
 .heading2{
-    margin-top: 80px;
-    margin-left: 700px;
+    margin-top: -60px;
+    margin-left: 750px;
     text-transform: uppercase;
     line-height: 2;
     letter-spacing: 0.1vw;
+    font-size: 1.3vw;
  
 }
+
 .heading2 #right{
     margin-left: 85px;
+    
 }
 .heading2 h5::selection{
-    background-color:#14CF93 ;
+    background-color :#52E0ED ;
 
     color: black;
+}
+#con{
+    margin-top: -350px;
+    margin-left: 350px ;
+    color: #9b9b9bac;
+    opacity: .4;
+    font-family: "General Sans";
+    font-size: 1.2vw;
+}
+#con2{
+    margin-top: 20px;
+    margin-left: 800px ;
+    color:#9b9b9bac ;
+    opacity: .4;
+    font-family: "General Sans";
+    font-size: 1.2vw;
 }
